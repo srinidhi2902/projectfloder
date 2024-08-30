@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Website</title>
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("images1.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      * {
+        text-decoration: none;
+      }
+
+      .navbar {
+        background-color:palevioletred;
+        font-family: "Times New Roman";
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .navbar a:hover {
+        background-color: rgb(244, 240, 240);
+        color:black;
+      }
+
+      .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo a {
+        font-size: 35px;
+        font-weight: 600;
+        color: #1f1d1d;
+      }
+
+      li {
+        list-style: none;
+        display: inline-block;
+        overflow: auto;
+      }
+
+      li a {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        margin-right: 25px;
+      }
+
+      .split {
+        display: flex;
+        height: calc(100vh - 140px);
+      }
+
+      .split .left {
+        width: 30%;
+        text-align: center;
+        background-image: url("image3.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 90px;
+        box-sizing: border-box;
+        background-color: transparent;
+        color:rgb(4, 52, 94);
+      }
+
+      .split .right {
+        width: 100%;
+        text-align: center;
+        background-image: url("image2.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 40px;
+        box-sizing: border-box;
+        background-color:transparent;
+        color:antiquewhite;
+      }
+
+      .footer {
+        background-color: #333;
+        color: rgb(255, 252, 252);
+        text-align: left;
+        padding: 10px 0;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .button1 {
+        
+        border: none;
+        color: rgb(7, 0, 0,0);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.3s ease,
+          opacity 0;
+          color: black;
+      }
+
+      .button2 {
+        background-color: #38d4b5;
+        border: none;
+        color: rgb(9, 1, 1);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .button1:hover {
+        transform: scale(1.05);
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="#">MASTER</a></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="split">
+      <div class="left">
+        <p>
+          Failure is simply the opportunity to begin again, this time more
+          intelligently.
+        </p>
+        <p>
+          All our dreams can come true, if we have the courage to pursue them.
+        </p>
+      </div>
+      <div class="right">
+        <h2>Mastermind Tech</h2>
+        <p>
+          Between big life decisions, heartbreaks, tragedies, and even simple
+          bad days when nothing seems to go right, it's easy to get down on your
+          outlook on life. That's where these moving life quotes come in. When
+          you (or a family member or friend) need a pick-me-up, these quotes
+          about life will turn your day around.
+        </p>
+        <button class="button1">Watch Video</button>
+        <button class="button2">Subscribe</button>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>www.mastermind.tech.in</h2>
+    </div>
+  </body>
+</html>
